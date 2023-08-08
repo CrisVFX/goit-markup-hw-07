@@ -855,8 +855,58 @@ height: 40px;
   letter-spacing: 0.64px;
 }
    
+
+ /* Default styles for mobile */
+
+/* ... (all the existing styles) ... */
+
+/* Hamburger menu styles */
+.hamburger-menu {
+  display: none; /* Hidden by default */
+  align-items: center;
+  margin-left: auto;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  width: 20px;
+  height: 22px;
+  background-color: var(--navyblue); /* Or your desired color */
+}
+
+/* Responsive styles for screens from 429px to 768px */
+@media (min-width: 429px) and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .mobile-contacts {
+    display: none;
+  }
+
+  /* Adjustments for mobile screens */
+}
+
+/* Responsive styles for screens above 768px */
+@media (min-width: 769px) {
+  /* Adjustments for screens larger than 768px */
   
-.arrow-icon{
-  width: 24px;
-  height: 24px;
+  .hamburger-menu {
+    display: none;
+  }
+  
+  .nav-menu {
+    display: flex;
+  }
+
+  .mobile-contacts {
+    display: none;
+  }
+
+  /* Add more adjustments for larger screens */
 }
