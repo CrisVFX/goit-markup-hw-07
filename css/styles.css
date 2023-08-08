@@ -856,23 +856,23 @@ height: 40px;
 }
    
 
- /* Default styles for mobile */
 
 /* ... (all the existing styles) ... */
 
 /* Hamburger menu styles */
-.hamburger-menu {
-  display: none; /* Hidden by default */
+.hamburger-menu .menu{
+  display: ; /* Hidden by default */
   align-items: center;
   margin-left: auto;
   gap: 10px;
   cursor: pointer;
 }
 
-.hamburger-icon {
-  width: 20px;
-  height: 22px;
-  background-color: var(--navyblue); /* Or your desired color */
+.hamburger-icon .menu {
+  width: 32px;
+height: 22px;
+flex-shrink: 0;
+  color: red;
 }
 
 /* Responsive styles for screens from 429px to 768px */
