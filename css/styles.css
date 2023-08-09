@@ -857,11 +857,9 @@ height: 40px;
    
 
 
-/* ... (all the existing styles) ... */
-
 /* Hamburger menu styles */
-.hamburger-menu .menu{
-  display: ; /* Hidden by default */
+.hamburger-menu {
+  display: none; 
   align-items: center;
   margin-left: auto;
   gap: 10px;
@@ -872,11 +870,13 @@ height: 40px;
   width: 32px;
 height: 22px;
 flex-shrink: 0;
-  color: red;
+cursor: pointer;
 }
 
 /* Responsive styles for screens from 429px to 768px */
-@media (min-width: 429px) and (max-width: 768px) {
+
+@media (min-width: 429px) and (max-width: 767px) {
+
   .nav-menu {
     display: none;
   }
@@ -886,27 +886,150 @@ flex-shrink: 0;
   }
 
   .mobile-contacts {
-    display: none;
+    display: block;
+    gap: 40px;
+    margin-top: 284px ;
   }
 
-  /* Adjustments for mobile screens */
+
+  .mobile-contacts .num{
+    font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  }
+
+  .mobile-contacts .mail{
+    font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
+  }
+
+ .menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 }
 
-/* Responsive styles for screens above 768px */
-@media (min-width: 769px) {
-  /* Adjustments for screens larger than 768px */
-  
-  .hamburger-menu {
+.social-team.menu{
+  display: inline-flex;
+align-items: flex-start;
+gap: 56px;
+fill: var(--white);
+list-style: none;
+
+}
+
+.hero {
+  height: 432px;
+  text-align: center; 
+}
+
+.hero-title {  
+
+font-size: 36px;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize;
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+
+.button.primary {
+margin-right: 130px;
+}
+
+
+.benefits .item {
+  display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 72px;
+}
+
+.benefits .icon{
+  display: none;
+}
+
+}
+
+/* Responsive styles for screens from 768px  */
+@media (min-width: 768px) {
+  .menu-toggle {
     display: none;
   }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color:var(--white);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 24px;
+  right: 15px;
+  color:var(--navyblue);
+  background-color: var(--cornflower);
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: var(--navyblue);
+  text-decoration: none;
+  font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize;
+}
+
+.contacts-menu .mobile-contacts {
+  color: var(--navyblue);
   
-  .nav-menu {
-    display: flex;
-  }
-
-  .mobile-contacts {
-    display: none;
-  }
-
-  /* Add more adjustments for larger screens */
 }
