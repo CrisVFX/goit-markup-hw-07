@@ -996,8 +996,8 @@ text-transform: capitalize;
 }
 
 .social-team.menu{
-  display: inline-flex;
-align-items: flex-start;
+  display: flex;
+align-items: center;
 gap: 56px;
 fill: var(--white);
 list-style: none;
@@ -1090,13 +1090,13 @@ text-transform: capitalize;
 
 
 /* Responsive styles for screens from 768px  */
-@media (max-width: 769px) {
+@media (max-width:768px )
   .menu-toggle {
-    display: none;
+    display: non ;
   }
 
   .menu-container {
-    display: none;
+    display: non;
   }
 
 
