@@ -931,9 +931,9 @@ text-transform: capitalize;
 
 
 
-/* Responsive styles for screens from 429px to 768px */
+/* Responsive styles for screens from 428px to 768px */
 
-@media (max-width: 428px) {
+@media ( max-width: 428px) {
 
   .nav-menu {
     display: none;
@@ -1084,22 +1084,162 @@ text-transform: capitalize;
   .footer-form .button {
     margin-left: 0; 
   }
+
+  /* PORTFOLIO */
+
+   .filters.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  /* PROJECTS */
+
+  .projects.list{
+    display: grid;
+  }
+
+  .partners .item {
+    width: calc(33.33% - 20px);
+    text-align: center;
+  }
+
+
 }
 
 
+/* Responsive styles for screens from 768px  TABLET VIEW */
+@media (min-width: 429px) and (max-width:768px ){
+ 
+ 
 
+.menu-container, .mobile-menu, .menu-toggle, .modal-close {
+  display: none;
+}
 
-/* Responsive styles for screens from 768px  */
-@media (max-width:768px )
-  .menu-toggle {
-    display: non ;
+.container {
+  width: 100%;
+}
+
+.logo-link{
+  display: inline-flex;
+}
+
+.nav-menu {
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+  .contacts-menu .contact {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    ;width: 118px;
+    height: 14px;
+    padding-top: 16px;
+    padding-bottom: 25px;
+    
   }
 
-  .menu-container {
-    display: non;
+
+.contacts-menu {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  margin-left: auto;
+  
+}
+
+.hero {
+ 
+  text-align: center; 
+  align-items: center;
+}
+
+.hero-title {  
+
+font-size: 36px;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize;
+  margin-bottom: 72px;
+  text-align: center;
+}
+ /* Section 2 */
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    justify-content: center;
+  }
+
+  .benefits  {
+    text-align:left;
+    align-content: center;
+  }
+
+
+.benefits .icon{
+  display: none;
+}
+
+/* Section 3 */
+
+.no-top .section-title{
+  display: none;
+}
+
+.what-we-do .item{
+  display: none;
+}
+
+/* Section 4 */
+
+.team.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section 5 */
+   .partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+  }
+
+  /* PORTFOLIO */
+
+  
+
+  .projects.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project-card {
+    flex-basis: calc(48% - 18px);
+    margin-bottom: 72px; 
   }
 
 
 
 }
 
+/* DESKTOP VIEW */
+
+@media (min-width: 769px){
+
+.menu-container, .mobile-menu, .menu-toggle, .modal-close {
+  display: none;
+}
+
+
+}
