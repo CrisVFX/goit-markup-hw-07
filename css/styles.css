@@ -933,7 +933,7 @@ text-transform: capitalize;
 
 /* Responsive styles for screens from 428px to 768px */
 
-@media ( max-width: 428px) {
+@media (min-width:320px) and ( max-width: 428px) {
 
   .nav-menu {
     display: none;
@@ -1054,9 +1054,10 @@ text-transform: capitalize;
 
 /* Section 5 */
  .partners.list {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px; 
+    justify-content: center;
   }
 
   .partners .item {
@@ -1172,7 +1173,7 @@ text-transform: capitalize;
   margin-top: 10px;
   width: 100%;
   margin-left: auto;
-  
+  gap: 0;
 }
 
 .hero {
@@ -1211,15 +1212,12 @@ text-transform: capitalize;
 
 /* Section 3 */
 
-.no-top .section-title{
-  display: none;
-}
-
-.what-we-do .item{
+.no-top{
   display: none;
 }
 
 /* Section 4 */
+
 
 .team.list {
   display: flex;
@@ -1228,11 +1226,15 @@ text-transform: capitalize;
 }
 
 /* Section 5 */
-   .partners {
+    .partners.list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; 
+    justify-content: space-between;
+    gap: 24px; 
+  }
+  
+   .partners .item {
+    flex-basis: calc(33.33% - 16px); 
   }
 
   .footer {
@@ -1247,9 +1249,6 @@ text-transform: capitalize;
     margin-left: 0;
   }
 
-  .footer-block{
-    margin-left: 0;
-  }
 
   /* PORTFOLIO */
 
