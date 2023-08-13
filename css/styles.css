@@ -1085,6 +1085,7 @@ text-transform: capitalize;
 
   .footer-form .button {
     margin-left: 0; 
+    margin-top: 16px;
   }
 
    .page-footer {
