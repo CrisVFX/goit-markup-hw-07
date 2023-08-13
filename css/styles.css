@@ -1062,7 +1062,7 @@ text-transform: capitalize;
 
   .partners .item {
     flex-basis: calc(48% - 8px); 
-    margin-bottom: 72px; 
+    width: 100%;
   }
 
   /* footer */
