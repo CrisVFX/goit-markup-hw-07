@@ -1070,10 +1070,12 @@ text-transform: capitalize;
     flex-direction: column; 
     align-items: center; 
     text-align: center; 
+    margin-top: 0;
+    margin-left: 0;
   }
 
   .footer-block {
-    margin-bottom: 20px;
+    margin-top: 72px;
   }
 
   .footer-form .form-input {
@@ -1085,6 +1087,20 @@ text-transform: capitalize;
     margin-left: 0; 
   }
 
+   .page-footer {
+    padding: 60px 0 60px 0;
+  }
+
+  .footer-address{
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .footer-block{
+    margin-left: 0;
+  }
+
   /* PORTFOLIO */
 
    .filters.list {
@@ -1092,6 +1108,11 @@ text-transform: capitalize;
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
+  }
+
+  .footer-heading{
+    width: 100%;
+    justify-content: center;
   }
 
   /* PROJECTS */
@@ -1214,6 +1235,22 @@ text-transform: capitalize;
     gap: 20px; 
   }
 
+  .footer {
+    width: 100%;
+    margin margin-top: 0;
+    margin-left: 0;
+  }
+
+  .footer-address {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .footer-block{
+    margin-left: 0;
+  }
+
   /* PORTFOLIO */
 
   
@@ -1229,6 +1266,7 @@ text-transform: capitalize;
     margin-bottom: 72px; 
   }
 
+ 
 
 
 }
