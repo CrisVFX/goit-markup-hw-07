@@ -1265,18 +1265,8 @@ text-transform: capitalize;
     margin-bottom: 72px; 
   }
 
- 
-
-
-}
-
-/* DESKTOP VIEW */
-
-@media (min-width: 769px){
-
-.menu-container, .mobile-menu, .menu-toggle, .modal-close {
-  display: none;
 }
 
 
-}
+
+
