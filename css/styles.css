@@ -1036,13 +1036,10 @@ text-transform: capitalize;
 
 /* Section 3 */
 
-.no-top .section-title{
+.no-top {
   display: none;
 }
 
-.what-we-do .item{
-  display: none;
-}
 
 /* Section 4 */
 
@@ -1056,13 +1053,18 @@ text-transform: capitalize;
  .partners.list {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    gap: 20px; 
     justify-content: center;
+    row-gap: 72px;
+    column-gap: 16px;
   }
 
   .partners .item {
     flex-basis: calc(48% - 8px); 
     width: 100%;
+  }
+
+  .section-title{
+    margin-bottom: 72px;
   }
 
   /* footer */
@@ -1123,10 +1125,6 @@ text-transform: capitalize;
     display: grid;
   }
 
-  .partners .item {
-    width: calc(33.33% - 20px);
-    text-align: center;
-  }
 
 
 }
