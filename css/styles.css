@@ -919,11 +919,26 @@ letter-spacing: 0.72px;
 text-transform: capitalize;
 }
 
+.mobile-menu .link:hover,
+.mobile-menu .link:focus{
+  color: var(--iris);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .contacts-menu .mobile-contacts {
   color: var(--navyblue);
   
 }
 
+.social-team.menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  fill: var(--white);
+  list-style: none;
+  padding-left: 0;
+
+}
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
@@ -947,6 +962,7 @@ text-transform: capitalize;
 
   .container{
     width: 100%;
+    height: 72px;
   }
 
   .contacts-menu{
@@ -979,9 +995,14 @@ text-transform: capitalize;
   letter-spacing: 0.4px;
   }
 
+  .menu-container .js-close-menu{
+    width: 24px;
+    height: 24px;
+  }
+
  .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  height: 40px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -995,14 +1016,6 @@ text-transform: capitalize;
   outline: none;
 }
 
-.social-team.menu{
-  display: flex;
-align-items: center;
-gap: 56px;
-fill: var(--white);
-list-style: none;
-
-}
 
 .hero {
  
