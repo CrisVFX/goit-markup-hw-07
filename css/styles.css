@@ -1258,21 +1258,12 @@ text-transform: capitalize;
 
   .page-footer {
     width: 100%;
-  
+    display: flex;
+    
   }
 
-  .footer-block .footer-address {
-    width: 100%;
-  }
 
-  .footer-address {
-    margin-left: 108px;
-  }
-
-  .footer-heading{
-    margin-top: 72px;
-  }
-
+ 
   
 
   
