@@ -1157,7 +1157,7 @@ text-transform: capitalize;
  
  
 
-.menu-container, .mobile-menu, .menu-toggle, .modal-close {
+.menu-container, .mobile-menu, .menu-toggle,  {
   display: none;
 }
 
