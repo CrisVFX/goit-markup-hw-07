@@ -948,7 +948,7 @@ text-transform: capitalize;
 
 /* Responsive styles for screens from 428px to 768px */
 
-@media (min-width:320px) and ( max-width: 428px) {
+ @media screen and (min-width: 320px) and (max-width: 767px) {
 
   .nav-menu {
     display: none;
@@ -956,6 +956,7 @@ text-transform: capitalize;
 
   .modal{
     padding: 72px 16px 24px 16px;
+    height: 100vh;
   }
 
 
@@ -1022,10 +1023,11 @@ text-transform: capitalize;
 
 
 .hero {
+  background-color: var(--grey, rgba(46, 47, 66, 0.7));
+  background-image: url(../images/people-office-M.jpg);
  
-  text-align: center; 
-  align-items: center;
-}
+   
+  }
 
 .hero-title {  
 
@@ -1044,7 +1046,6 @@ text-transform: capitalize;
 
 .benefits .item  {
   place-self: center;
-
 }
 
 .benefits .icon{
@@ -1146,13 +1147,13 @@ text-transform: capitalize;
     display: grid;
   }
 
-
-
 }
 
 
+
+
 /* Responsive styles for screens from 768px  TABLET VIEW */
-@media (min-width: 429px) and (max-width:768px ){
+ @media screen and (min-width: 768px) {
  
  
 
@@ -1161,7 +1162,7 @@ text-transform: capitalize;
 }
 
 .container {
-  width: 100%;
+  width: 768px;
 }
 
 .logo-link{
@@ -1175,10 +1176,9 @@ text-transform: capitalize;
 }
 
   .contacts-menu .contact {
-    display: block;
+    
     font-size: 12px;
     letter-spacing: 0.48px;
-    ;width: 118px;
     height: 14px;
     padding-top: 16px;
     padding-bottom: 25px;
@@ -1187,8 +1187,8 @@ text-transform: capitalize;
 
 
 .contacts-menu {
-  flex-direction: column;
-  align-items: center;
+ display: flex;
+ flex-direction: column;
   margin-top: 10px;
   width: 100%;
   margin-left: auto;
@@ -1279,6 +1279,24 @@ text-transform: capitalize;
   }
 
 }
+
+
+/* DESKTOP VIEW */
+
+ @media screen and (min-width: 1158px) {
+
+.container{
+  width: 100%;
+}
+
+ .contacts-menu{
+  display: flex;
+ }
+
+}
+
+
+
 
 
 
