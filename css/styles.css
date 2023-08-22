@@ -16,7 +16,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--slate);
 }
-
+  
 h1,
 h2,
 h3,
@@ -1174,7 +1174,7 @@ margin-bottom: ;
   }
 
   .filters .space + .space {
-  margin-left: 0  ;
+  margin-left: 0     ;
 }
 
   
@@ -1335,14 +1335,14 @@ text-transform: capitalize;
 
  @media screen and (min-width: 1158px) {
 
-.container{
+.container{    
   width: 100%;
 }
 
- .contacts-menu{
-  display: flex;
+ .contacts-menu .contact{
+  display: block;
  }
-
+  
 }
 
 
