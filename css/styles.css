@@ -966,8 +966,8 @@ text-transform: capitalize;
   }
 
   .container{
-    width: 428px;
-   
+    width: 100%;
+   padding: 16px;
   }
 
   .contacts-menu{
@@ -1021,11 +1021,16 @@ text-transform: capitalize;
   outline: none;
 }
 
+.social-team .icon-item{
+  fill: var(--white);
+  color: var(--white);
+}
+
 
 .hero {
   background-color: var(--grey, rgba(46, 47, 66, 0.7));
   background-image: url(../images/people-office-M.jpg);
- 
+  
    
   }
 
@@ -1046,6 +1051,27 @@ text-transform: capitalize;
 
 .benefits .item  {
   place-self: center;
+  align-self: stretch;
+}
+
+.benefits .title {
+  color: var(--navyblue, #2E2F42);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize;
+}
+
+.benefits .description{
+  align-self: stretch;
+  color: var(--slate, #434455);
+font-size: 16px;
+font-weight: 500;
+line-height: 24px; /* 150% */
+letter-spacing: 0.32px;
+
 }
 
 .benefits .icon{
@@ -1176,13 +1202,17 @@ text-transform: capitalize;
 }
 
   .contacts-menu .contact {
-    
+    flex-wrap: wrap;
     font-size: 12px;
     letter-spacing: 0.48px;
     height: 14px;
     padding-top: 16px;
     padding-bottom: 25px;
     
+  }
+
+  .contacts-menu .item-menu{
+    margin-left: auto;
   }
 
 
@@ -1256,10 +1286,13 @@ text-transform: capitalize;
     flex-basis: calc(33.33% - 16px); 
   }
 
-  .page-footer {
+  .page-footer .container {
     width: 100%;
-    display: flex;
-    
+      
+  }
+
+  .footer-address .footer-block {
+    display: block;
   }
 
 
