@@ -611,6 +611,7 @@ padding: 40px;
   background: var(--dairy, #FCFCFC);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-close {
@@ -966,8 +967,8 @@ cursor: pointer;
 
   .modal{
     padding: 72px 16px 24px 16px;
-    width: 392px;
-    flex-shrink: 0;
+    width: 100%;
+    max-width: 392px;
   }
 
 
