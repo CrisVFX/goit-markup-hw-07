@@ -1399,30 +1399,35 @@ text-transform: capitalize;
   align-items: center;
   }
 
-  .page-footer .container {
-    width: 100%;
-      
+  
+
+  .footer{
+     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding-left: 108px;
   }
 
-  .footer-address {
-    margin-left: 108px;
+  .footer-address{
+     width: 264px;
+    margin-left: 0;
+    text-align: left;
   }
-  
-  .footer-block{
+
+  .footer-address .logo-link{
+     justify-content: flex-start;
+  }
+
+  .footer-description{
+    width: 264px;
+  }
+
+  .footer-social{
     margin-left: 24px;
   }
 
-  .footer .footer-block{
-    align-items: center;
-    justify-items: center;
-  }
-
-  .footer-heading{
-    margin-top: 72px;
-    
-  }
-
-  
   
 
   /* PORTFOLIO */
