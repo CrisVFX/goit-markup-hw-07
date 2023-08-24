@@ -1049,6 +1049,16 @@ cursor: pointer;
   fill: currentColor;
  }
 
+ .social-team .icon-item{
+   width: 40px;
+  height: 40px;
+   
+ }
+
+ 
+
+
+
 
 .hero {
   background-color: var(--grey, rgba(46, 47, 66, 0.7));
