@@ -172,10 +172,21 @@ img {
   line-height: 1.87;
 }
 
+  .projects.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.project .link{
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 .project-card {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -957,9 +968,11 @@ cursor: pointer;
 
 
 
-/* Responsive styles for screens from 428px to 768px */
+/* Responsive styles for MOBILE screens from 428px to 768px */
 
- @media screen and (min-width: 320px) and (max-width: 767px) {
+ @media screen and (min-width: 320px) and (max-width: 767px), 
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
 
   .nav-menu {
     display: none;
@@ -1024,6 +1037,26 @@ cursor: pointer;
     padding: 80px 0 40px 40px;
   }
 
+  .container-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .mobile-menu-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+.mobile-container-footer{
+  display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
   .contacts-menu.list{
     margin: 0;
   }
@@ -1052,17 +1085,20 @@ cursor: pointer;
  .social-team .icon-item{
    width: 40px;
   height: 40px;
-   
+ }
+
+ .social-team.menu{
+  gap: 56px;
  }
 
  
 
-
-
-
 .hero {
   background-color: var(--grey, rgba(46, 47, 66, 0.7));
   background-image: url(../images/people-office-M.jpg);
+   background-image: url(../images/people-office-M.jpg),
+      url(../images/people-office-M@2x.jpg),
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
   padding: 112px 0;
   height: auto;
    
@@ -1263,13 +1299,15 @@ letter-spacing: 0.32px;
 
 
 /* Responsive styles for screens from 768px  TABLET VIEW */
- @media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px),
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dpp) {
  
  
 
 .menu-container, .mobile-menu, .menu-toggle,  {
   display: none;
 }
+
 
 .container {
   width: 768px;
@@ -1295,8 +1333,11 @@ letter-spacing: 0.32px;
     
   }
 
-  .contacts-menu .item-menu{
-    margin-left: auto;
+  .contacts-menu .list {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   
   }
 
 
@@ -1304,7 +1345,6 @@ letter-spacing: 0.32px;
  display: flex;
  flex-direction: column;
   margin-top: 10px;
-  width: 100%;
   margin-left: auto;
   gap: 0;
 }
@@ -1312,15 +1352,22 @@ letter-spacing: 0.32px;
 .hero {
   text-align: center; 
   align-items: center;
+    background-image: url(../images/dark-hero-bg.png),
+      url(../images/people-office-T.jpg),
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+       background-image: url(../images/dark-hero-bg.png),
+        url(../images/people-office-T@2x.jpg),
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 }
 
 .hero-title {  
 
-font-size: 36px;
-font-weight: 700;
-line-height: 40px; /* 111.111% */
-letter-spacing: 0.72px;
-text-transform: capitalize;
+  color: var(--white, #FFF);
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px; /* 107.143% */
+  letter-spacing: 1.12px;
   margin-bottom: 72px;
   text-align: center;
 }
@@ -1418,12 +1465,15 @@ text-transform: capitalize;
     justify-content: left;
     flex-wrap: wrap;
     padding-left: 108px;
+    margin-top: 0;
+    margin: 0;
   }
 
   .footer-address{
      width: 264px;
     margin-left: 0;
     text-align: left;
+    margin-bottom: 72px;
   }
 
   .footer-address .logo-link{
@@ -1438,36 +1488,89 @@ text-transform: capitalize;
     margin-left: 24px;
   }
 
+  .footer-block{
+   margin: 0;
+  }
+
+  .page-footer{
+    padding: 96px 0 96px 0;
+  }
+
   
 
   /* PORTFOLIO */
 
-  
-
-  .projects.list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .project-card {
-    flex-basis: calc(48% - 18px);
-    margin-bottom: 72px; 
-  }
+ .project-card {
+   width: calc((100% - 24px) / 2);
+ }
 
 }
 
 
 /* DESKTOP VIEW */
 
- @media screen and (min-width: 1158px) {
+ @media screen and (min-width: 1158px), @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi), (min-resolution: 2dppx)  {
 
 .container{    
-  width: 1440px;
+  width: 1158px;
 }
 
- .contacts-menu .contact{
-  display: block;
+.menu,
+.navigation,
+.nav-menu,
+.contacts-menu {
+  display: flex;
+  align-items: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-menu {
+  margin-left: auto;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.contact.link{
+  color: var(--slate, #434455); 
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+
+.nav-menu .item:not(:last-child) .contacts-menu .item:not(:last-child) {
+  margin-right: 50px;
+}
+ 
+.page-header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ .hamburger-menu, .menu-toggle{
+  display: none;
+ }
+
+ .hero-title{
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px; /* 107.143% */
+  letter-spacing: 1.12px;
+ }
+
+ .hero{
+   padding: 188px 0;
+    background-image: url(../images/dark-hero-bg.png),
+      url(../images/people-office-D.jpg),
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    background-size: 1440px, 1440px;
+    background-image: url(../images/dark-hero-bg.png),
+        url(../images/people-office-D@2x.jpg),
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
  }
 
  /* Section 2 */
@@ -1511,6 +1614,10 @@ text-transform: capitalize;
   width: 264px;
 }
 
+.partners .item{
+  width: 168px;
+}
+
 /* SECTION 3 */
 .no-top{
 display: contents;
@@ -1524,6 +1631,29 @@ display: contents;
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+
+.footer-form{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+
+/* PORTFOLIO */
+
+.project-card{
+  width: calc((100% - 48px) / 3); 
+}
+
+.projects.list{
+  gap: 24px;
+}
+
+.filters.list{
+  margin-bottom: 120px ;
+}
+
 
 
  }
