@@ -1147,10 +1147,11 @@ text-transform: capitalize;
 .benefits .description{
   align-self: stretch;
   color: var(--slate, #434455);
-font-size: 16px;
-font-weight: 500;
-line-height: 24px; /* 150% */
-letter-spacing: 0.32px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  width: 396px;
 
 }
 
@@ -1210,6 +1211,7 @@ letter-spacing: 0.32px;
     flex-direction: column; 
     align-items: center; 
     text-align: center; 
+    justify-content: center;
     margin-top: 0;
     margin-left: 0;
   }
@@ -1233,6 +1235,7 @@ letter-spacing: 0.32px;
     padding: 60px 0 60px 0;
   }
 
+  
   .footer-address{
     margin-top: 0;
     margin-left: 0;
@@ -1468,24 +1471,18 @@ letter-spacing: 0.32px;
     margin: 0;
   }
 
+
   .footer-address{
-     width: 264px;
     margin-left: 0;
     text-align: left;
     margin-bottom: 72px;
   }
 
-  .footer-address .logo-link{
-     justify-content: flex-start;
-  }
-
+  
   .footer-description{
     width: 264px;
   }
 
-  .footer-social{
-    margin-left: 24px;
-  }
 
   .footer-block{
    margin: 0;
@@ -1493,6 +1490,10 @@ letter-spacing: 0.32px;
 
   .page-footer{
     padding: 96px 0 96px 0;
+  }
+
+  .form-input{
+    height: 40px;
   }
 
   
@@ -1630,12 +1631,39 @@ display: contents;
   padding-bottom: 120px;
 }
 
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 96px;
+  row-gap: 0;
+ 
+}
+
+
+.footer-description{
+  text-align: left;
+}
+
+.social-footer.list{
+  justify-content: flex-start;
+}
+
+.button.primary{
+  align-self: flex-end;
+  height: 40px;
+}
+
+.form-input{
+  height: 40px;
+}
 
 .footer-form{
   display: flex;
   flex-direction: row;
   gap: 24px;
 }
+
 
 
 /* PORTFOLIO */
