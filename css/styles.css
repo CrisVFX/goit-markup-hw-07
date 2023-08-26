@@ -1566,7 +1566,7 @@ text-transform: capitalize;
     background-image: url(../images/dark-hero-bg.png),
       url(../images/people-office-D.jpg),
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
-    background-size: 1440px, 1440px;
+    
     background-image: url(../images/dark-hero-bg.png),
         url(../images/people-office-D@2x.jpg),
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
@@ -1649,7 +1649,7 @@ display: contents;
   justify-content: flex-start;
 }
 
-.button.primary{
+.footer-btn.primary{
   align-self: flex-end;
   height: 40px;
 }
