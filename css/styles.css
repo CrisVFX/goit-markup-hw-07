@@ -1468,7 +1468,7 @@ text-transform: capitalize;
     flex-wrap: wrap;
     padding-left: 108px;
     margin-top: 0;
-    margin: 0;
+    
   }
 
 
@@ -1637,14 +1637,15 @@ display: contents;
   flex-wrap: nowrap;
   column-gap: 96px;
   row-gap: 0;
-  width: 100%;
+  width: 1158px;
+  padding-left: 80px;
  
 }
 
-.page-footer{
-
-  padding left: 100px;
+.footer{
+  padding-left: 0;
 }
+
 
 
 .footer-description{
@@ -1658,7 +1659,6 @@ display: contents;
 .footer-address {
   margin-top: 37px;
   margin-right: 80px;
-  margin-left: 0;
 }
 
 .footer-btn.primary{
